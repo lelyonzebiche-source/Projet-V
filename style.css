@@ -1,0 +1,141 @@
+/* Variables système (Vinted Teal exact) */
+:root {
+    --vinted-teal: #007782;
+    --bg-light: #f5f5f5;
+    --text-dark: #111;
+    --border-light: #dbdbdb;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header & Logo (Ajusté pour agrandir l'image) */
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 10px 16px; /* Maintient les marges internes compactes */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee; /* Ligne fine discrète */
+}
+
+.logo-img {
+    height: 35px; /* MODIFIÉ : Beaucoup plus grand que les 22px précédents */
+    width: auto;
+    object-fit: contain;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #999;
+    font-weight: 300;
+}
+
+/* Barre de recherche (Maintien de la structure compacte) */
+.search-container {
+    width: 100%;
+    background-color: white;
+    padding: 6px 16px 12px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+
+.search-bar {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+}
+
+.category {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+/* Carte de connexion (Ajustée Mobile-first) */
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.login-card {
+    background-color: white;
+    width: 90%;
+    max-width: 390px;
+    padding: 30px 20px;
+    border-radius: 4px; /* Angles très légers */
+    text-align: center;
+    border: 1px solid #eee; /* Bordure fine pour se détacher du fond */
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px; /* Formulaire resserré */
+    color: var(--text-dark);
+}
+
+/* Champs soulignés (Plus fins) */
+.input-group {
+    margin-bottom: 22px; /* Espacement réduit entre les champs */
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--border-light);
+    padding: 8px 0; /* Fin et propre */
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    color: var(--text-dark);
+}
+
+input:focus {
+    border-bottom: 1px solid var(--vinted-teal);
+}
+
+input::placeholder {
+    color: #999;
+}
+
+/* Bouton Continuer (Arrondis légers) */
+.btn-submit {
+    width: 100%;
+    background-color: var(--vinted-teal);
+    color: white;
+    border: none;
+    padding: 13px; /* Épaisseur moyenne */
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px; /* Rapproché */
+}
+
+/* Liens (Taille ajustée) */
+.footer-links a {
+    display: block;
+    margin-top: 20px; /* Rapproché */
+    color: var(--vinted-teal);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+  
